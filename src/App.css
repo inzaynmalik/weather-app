@@ -1,28 +1,86 @@
-  *{
-    margin: 0;
-    padding: 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  .App {
-    padding: 15px;
-    border: "solid black";
- 
-  }
+.App {
+  padding: 15px;
+  border: "solid black";
+}
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1280px) {
   .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
   }
+}
 
-  @media screen and (max-width: 1280px) {
-    .cards {
-      justify-content: center;
-    }
+.loading-container {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dots-container {
+  display: flex;
+}
+
+.dot {
+  opacity: 0.5;
+  font-size: 36px;
+  margin-right: 8px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.dot.active {
+  transform: scale(1.5);
+}
+
+.dot1.active {
+  animation: expandContract1 0.5s infinite;
+}
+
+.dot2.active {
+  animation: expandContract2 0.5s infinite;
+}
+
+.dot3.active {
+  animation: expandContract3 0.5s infinite;
+}
+
+@keyframes expandContract1 {
+  0%,
+  100% {
+    transform: scale(1.5);
   }
+  20% {
+    transform: scale(1);
+  }
+}
 
+@keyframes expandContract2 {
+  0%,
+  100% {
+    transform: scale(0.5);
+  }
+  20% {
+    transform: scale(1);
+  }
+}
 
-
-
-
-
+@keyframes expandContract3 {
+  0%,
+  100% {
+    transform: scale(0.5);
+  }
+  20% {
+    transform: scale(1);
+  }
+}
