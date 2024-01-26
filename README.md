@@ -11,7 +11,7 @@ Run Command "npm start"
 
 # Talking about structure and the project
 
-1. I created two(App.js , DialogBox.js) components and one resualble component(Card.js)
+1. I created two components(App.js , DialogBox.js)and one resualble component(Card.js)
 
 2. I also created a redux where i stored the data as initialData
 
