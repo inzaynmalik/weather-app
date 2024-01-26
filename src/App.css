@@ -1,0 +1,28 @@
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .App {
+    padding: 15px;
+    border: "solid black";
+ 
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+
+
+
+
+
+
